@@ -1,6 +1,6 @@
-import { Button, Container, Flex, Text, HStack } from "@chakra-ui/react";
+import { Button, Container, Flex, Text, HStack, useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { PlusSquareIcon } from "@chakra-ui/react";
+import { PlusSquareIcon } from "@chakra-ui/icons";
 
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
@@ -11,7 +11,7 @@ const Navbar = () => {
         <Container maxW={"1140px"} px={4}>
             <Flex
                h={16}
-               alignItems={"c"}
+               alignItems={"center"}
                justifyContent={"space-between"}
                flexDir={{
                  base: "column",

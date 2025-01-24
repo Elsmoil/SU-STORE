@@ -16,7 +16,7 @@ const __dirname = path.resolve();
 app.use(express.json()); // allows us to accept JSON data in the req.body
 
 app.use("/api/products", productRoutes);
-
+	console.log(process.env.MONGO_URI);
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 	app.get("*", (req, res) => {
